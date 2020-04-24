@@ -1,0 +1,316 @@
+body {
+	margin: 0 auto;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+header {
+	padding: 10px; 
+	text-align: center; 
+	font-size: 20px; 
+	font-weight: bold;
+}
+		
+.f1, 
+.f2 { 
+	width: 905px;
+	margin: 0 auto; 
+}
+
+/*styles for first form */
+
+.f1 form { border-left: 3px solid navy; }
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.f1-fs {
+	float: left;
+	position: relative;
+	width: 450px;
+	height: 390px; 
+	margin: 20px 0;
+}	
+
+.fs2 div:not(.fs2-agree) { height: 190px; }
+
+.f1 legend { 
+	margin: 10px;
+	font-weight: bold; 
+}
+
+.fs1-label,
+.fs2-label {
+	float: left;
+	width: 160px;
+	margin-left: 10px;
+}
+
+.fs1-label label,
+.fs2-label label {
+	display: block;
+	height: 26px;
+	margin: 3px 0;
+	padding: 4px 0;
+}
+
+.fs2-label label:nth-child(2) { margin-top: 34px; }
+
+.fs2-label label:nth-child(3) { height: 44px; }
+
+.fs1-input,
+.fs2-input {
+	float: left;
+	width: 250px;
+	margin-left: 15px;
+}
+
+.fs1-input-appeal {
+	height: 25px;
+	padding: 4px 0;
+}
+
+.fs1-input-appeal,
+.fs1-input-city,
+.ph {
+	width: 220px;
+	margin: 3px 0;
+}
+
+.fs1-input-city { height: 23px; }
+
+.ph { height: 25px; }
+
+input { padding-left: 4px; }
+
+.fs1-input-appeal input[type="radio"] { margin-left: 5px; }
+
+.fs1-input > input:not([type="radio"]), 
+.fs1-input > select,
+.fs2-input > input,
+.fs2-input > select {
+	width: 220px;
+	height: 23px;
+	margin: 3px 0;
+	border: 1px solid lightgrey;
+	border-radius: 4px;
+}
+
+.fs1-input-city input { width: 150px; }
+
+.fs1-input-city input,
+.ph input,
+.ph select {
+	float: left;
+	height: 23px;
+	border: 1px solid lightgrey;
+	border-radius: 4px;
+}
+
+.fs1-input-city input:first-child,
+.ph select,
+.ph input:nth-child(2) {
+	width: 56px;
+	margin-right: 4px;
+}
+
+.ph input:last-child { width: 100px; }
+
+.fs1-input-city input:last-child { width: 160px; }
+		
+.fs2-input p {
+	width: 110px;
+	margin: 3px 0;
+}
+
+.fs2-input progress {
+	width: 220px;
+	height: 10px;
+	margin: 6px 0;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	background: white;
+  -webkit-appearance: none;
+}
+
+::-webkit-progress-bar {
+	border-radius: 5px;
+  background-color: white;	
+}
+
+::-webkit-progress-value {
+	border-radius: 5px;
+  background: linear-gradient(to right, red, yellow);
+}
+
+::-moz-progress-bar {
+	border-radius: 5px;
+	background: linear-gradient(to right, red, yellow);	
+}
+
+.fs2-input progress::-ms-fill {
+	border-radius: 5px;
+	background: linear-gradient(to right, red, yellow);
+}
+
+.f1 .fs2-input input[id="passwordRepeat"] { margin-bottom: 22px; }
+
+.f1 .fs2 .fs2-agree {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 5px 10px;
+	vertical-align: top;
+	background: lightgrey;	
+}
+
+.f1 .fs2-agree input { vertical-align: top; }
+
+.f1 .fs2-agree label {
+	display: inline-block;
+	width: 350px;
+}
+
+.f1 .fs2-agree label a { text-decoration: none; }
+		
+.f1 form input[type="submit"] {
+	float: right;
+	margin-right: 10px;
+	padding: 8px;
+	border: none;
+	border-radius: 4px;	
+	background: linear-gradient(to bottom, yellowgreen, green);
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/*styles for second form*/
+
+.f2 { 
+	margin-top: 50px;
+	font-size: 14px; 
+}
+
+.fs { 
+	padding: 5px 0 10px;
+	background-color: #eef6f8; 
+}
+
+.f2 legend {
+	width: 100%;
+	padding: 3px 5px;
+	border-radius: 5px;
+	background: linear-gradient(to bottom, lightblue, blue);
+	color: white;
+	font-size: 14px;
+}
+	
+.f2-fs1-label, 
+.f2-fs2-label { width: 225px; }
+
+.f2-fs1-label label { display: block; }
+		
+.fs div { margin: 5px 0; }
+
+.fs div label:first-child { 
+	display: inline-block; 
+	width: 225px; 
+	text-align: right;
+	vertical-align: bottom;
+	font-weight: bold;
+}
+
+.fs div > input, 
+.fs div > select { margin: 0 10px 0 5px; }
+		
+.f2-fs1 input  { width: 275px; }
+
+.f2-fs1 .f2-fs1-about {
+	margin: 15px 0;
+	height: 32px;
+}
+
+.f2-fs1-about::before,
+.f2-fs2 > p::before {
+	content: "";
+	display: inline-block;
+	width: 235px;
+	height: 20px;
+}
+
+.fs select,
+.fs input { height: 20px; }
+		
+.f2-fs2 input[type="button"],
+.f2-fs2 input[type="submit"] {
+	padding: 0 10px;
+	border: 1px solid black;
+	border-radius: 3px;
+	background: linear-gradient(to bottom, ghostwhite, lightgrey); 
+	font-weight: bold;
+}
+
+.f2-fs2 > p {
+	margin: 10px 0 20px;
+	height: 30px;
+	font-size: 12px;
+}
+
+.f2-fs2 > p:nth-of-type(2) {
+	height: 20px;
+	margin: 10px 0;
+}
+
+.f2-fs1-country select { width: 335px; }
+
+.f2-fs1-postcode input { width: 100px; }
+
+.f2 .f2-fs2-username { margin-top: 20px; }
+
+.f2 .f2-fs2-question,
+.f2 .f2-fs2-currency { margin-top: 40px; }
+
+.f2-fs2 input[type="password"],
+.f2-fs2 input[type="text"],
+.f2-fs2 select { width: 180px; }
+
+.f2 .f2-fs2-currency p {
+	display: inline-block;
+	width: 475px;
+}
+
+.f2-fs2-currency { height: 68px; }
+
+.f2 .f2-fs2-currency label { vertical-align: top !important; }
+
+.f2 .f2-fs2-currency select { 
+	margin-top: 24px;
+	vertical-align: top;
+}
+		
+.f2 .f2-fs2-checkCode label {
+	display: inline-block;
+	margin-left: 5px;
+	vertical-align: top;
+}
+		
+.f2 .f2-fs2-checkCode label input {
+	margin-right: 5px;
+	vertical-align: top;
+}
+		
+.f2-fs2-rules ul {
+	margin: 20px 0 0 240px;
+	list-style: disc;
+	list-style-position: inside;
+}
+
+.f2-fs2-rules ul li { margin: 10px 5px; }
+
+.f2-fs2-rules ul li:nth-child(n+2) { margin: 10px 5px 10px 15px; }
+
+.f2-fs2 > input[type="submit"] { margin: 30px 0 10px 240px; }

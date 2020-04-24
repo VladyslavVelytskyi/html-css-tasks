@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>homework_2</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="homework_2-style.css">
+<body>
+	<section class="f1">
+		<header>
+			<h1>Form 1</h1>
+		</header>
+		<form class="clearfix">
+			<fieldset class="f1-fs fs1">
+				<legend>1. Личные данные</legend>
+				<div class="fs1-label">
+					<label>Обращение*</label>
+					<label for="rank">Звание</label>
+					<label for="firstName">Имя*</label>
+					<label for="surname">Фамилия*</label>
+					<label for="streetName">Улица*</label>
+					<label for="postcode">Индекс/город*</label>
+					<label for="country">Страна*</label>
+					<label for="currency">Валюта*</label>
+					<label for="birthDate">Дата рождения*</label>
+					<label for="email">E-mail*</label>
+					<label for="mobilePhoneNumber">Мобильный телефон</label>
+					<label for="phoneNumber">Телефон</label>
+				</div>
+				<div class="fs1-input">
+					<div class="fs1-input-appeal">
+						<label>Господин<input type="radio" name="appeal" value="mister" checked></label>
+						<label>Госпожа<input type="radio" name="appeal" value="mistress"></label>
+					</div>
+					<input type="text" name="rank" id="rank">
+					<input type="text" name="firstName" id="firstName" required placeholder="Sergey">
+					<input type="text" name="surname" id="surname" required placeholder="Sergeev">
+					<input type="text" name="streetName" id="streetName" required placeholder="Lenina 22">
+					<div class="fs1-input-city">
+						<input type="text" name="postcode" id="postcode" placeholder="94000">
+						<input type="text" name="city" required placeholder="Kiev">
+					</div>
+					<select name="country" id="country" required>
+						<option value="AT">Австрия</option>
+						<option value="AL">Албания</option>
+						<option value="AD">Андорpа</option>
+						<option value="BY">Белорусия</option>
+						<option value="BE">Бельгия</option>
+						<option value="BG">Болгария</option>
+						<option value="BA">Босния и Герцеговина</option>
+						<option value="VA">Ватикан</option>
+						<option value="GB">Великобритания</option>
+						<option value="HU">Венгрия</option>
+						<option value="DE">Германия</option>
+						<option value="GR">Греция</option>
+						<option value="DK">Дания</option>
+						<option value="IE">Ирландия</option>
+						<option value="IS">Исландия</option>
+						<option value="ES">Испания</option>
+						<option value="IT">Италия</option>
+						<option value="LV">Латвия</option>
+						<option value="LT">Литва</option>
+						<option value="LI">Лихтенштейн</option>
+						<option value="LU">Люксембург</option>
+						<option value="MK">Македония</option>
+						<option value="MT">Мальта</option>
+						<option value="MD">Молдавия</option>
+						<option value="MC">Монако</option>
+						<option value="NL">Нидерланды</option>
+						<option value="NO">Норвегия</option>
+						<option value="PL">Польша</option>
+						<option value="PT">Португалия</option>
+						<option value="RU">Россия</option>
+						<option value="RO">Румыния</option>
+						<option value="SM">Сан-Марино</option>
+						<option value="RS">Сербия</option>
+						<option value="SK">Словакия</option>
+						<option value="SI">Словения</option>
+						<option value="UA">Украина</option>
+						<option value="FI">Финляндия</option>
+						<option value="FR">Франция</option>
+						<option value="HR">Хорватия</option>
+						<option value="ME">Черногория</option>
+						<option value="CZ">Чехия</option>
+						<option value="CH">Швейцария</option>
+						<option value="SE">Швеция</option>
+						<option value="EE">Эстония</option>
+					</select>
+					<select name="currency" id="currency" required>
+						<option value="USD">Американский доллар (USD)</option>
+						<option value="ALB">Албанскай лек (ALB)</option>
+						<option value="BYR">Белорусский рубль (BYR)</option>
+						<option value="BGN">Болгарский лев (BGN)</option>
+						<option value="HUF">Венгерский форинт (HUF)</option>
+						<option value="DKK">Датская крона (DKK)</option>
+						<option value="EUR">Евро (EUR)</option>
+						<option value="ISK">Исландская крона (ISK)</option>
+						<option value="BAM">Конвертируемая марка (BAM)</option>
+						<option value="MKD">Македонский денар (MKD)</option>
+						<option value="MDL">Молдавский лей (MDL)</option>
+						<option value="NOK">Норвежская крона (NOK)</option>
+						<option value="PLN">Польский злотый (PLN)</option>
+						<option value="RUB">Российский рубль (RUB)</option>
+						<option value="RON">Румынский лей (RON)</option>
+						<option value="RSD">Сербский динар (RSD)</option>
+						<option value="UAH">Украинская гривна (UAH)</option>
+						<option value="GBP">Фунт стерлингов (GBP)</option>
+						<option value="HRK">Хорватская куна (HRK)</option>
+						<option value="CZN">Чешский крона (CZN)</option>
+						<option value="SEK">Шведская крона (SEK)</option>
+						<option value="CHF">Швейцарский франк (CHF)</option>
+					</select>
+					<input type="date" name="birthDate" id="birthDate" required>
+					<input type="email" name="email" id="email" pattern="/^[a-z0-9_%+-.]{2,}+@[a-z]{2,}+\.[a-z]{2,4}$/" required placeholder="sersergey6547@gmail.com">
+					<div class="fs1-input-mobilePhoneNumber ph">
+						<select name="callingCodes">
+							<option value="+30">+30</option>
+							<option value="+31">+31</option>
+							<option value="+32">+32</option>
+							<option value="+33">+33</option>
+							<option value="+34">+34</option>
+							<option value="+351">+351</option>
+							<option value="+352">+352</option>
+							<option value="+353">+353</option>
+							<option value="+354">+354</option>
+							<option value="+355">+355</option>
+							<option value="+356">+356</option>
+							<option value="+358">+358</option>
+							<option value="+359">+359</option>
+							<option value="+36">+36</option>
+							<option value="+370">+370</option>
+							<option value="+371">+371</option>
+							<option value="+372">+372</option>
+							<option value="+373">+373</option>
+							<option value="+375">+375</option>
+							<option value="+376">+376</option>
+							<option value="+377">+377</option>
+							<option value="+378">+378</option>
+							<option value="+379">+379</option>
+							<option value="+380">+380</option>
+							<option value="+381">+381</option>
+							<option value="+382">+382</option>
+							<option value="+385">+385</option>
+							<option value="+386">+386</option>
+							<option value="+387">+387</option>
+							<option value="+389">+389</option>
+							<option value="+39">+39</option>
+							<option value="+40">+40</option>
+							<option value="+41">+41</option>
+							<option value="+420">+420</option>
+							<option value="+421">+421</option>
+							<option value="+423">+423</option>
+							<option value="+43">+43</option>
+							<option value="+44">+44</option>
+							<option value="+45">+45</option>
+							<option value="+46">+46</option>
+							<option value="+47">+47</option>
+							<option value="+48">+48</option>
+							<option value="+49">+49</option>
+							<option value="+7">+7</option>
+						</select>
+						<input type="tel" pattern="/^\d{3}&/">
+						<input type="tel" pattern="/^\d{4}&/">
+					</div>	
+					<div class="fs1-input-phoneNumber ph">
+						<select name="callingCodes">
+							<option value="+30">+30</option>
+							<option value="+31">+31</option>
+							<option value="+32">+32</option>
+							<option value="+33">+33</option>
+							<option value="+34">+34</option>
+							<option value="+351">+351</option>
+							<option value="+352">+352</option>
+							<option value="+353">+353</option>
+							<option value="+354">+354</option>
+							<option value="+355">+355</option>
+							<option value="+356">+356</option>
+							<option value="+358">+358</option>
+							<option value="+359">+359</option>
+							<option value="+36">+36</option>
+							<option value="+370">+370</option>
+							<option value="+371">+371</option>
+							<option value="+372">+372</option>
+							<option value="+373">+373</option>
+							<option value="+375">+375</option>
+							<option value="+376">+376</option>
+							<option value="+377">+377</option>
+							<option value="+378">+378</option>
+							<option value="+379">+379</option>
+							<option value="+380">+380</option>
+							<option value="+381">+381</option>
+							<option value="+382">+382</option>
+							<option value="+385">+385</option>
+							<option value="+386">+386</option>
+							<option value="+387">+387</option>
+							<option value="+389">+389</option>
+							<option value="+39">+39</option>
+							<option value="+40">+40</option>
+							<option value="+41">+41</option>
+							<option value="+420">+420</option>
+							<option value="+421">+421</option>
+							<option value="+423">+423</option>
+							<option value="+43">+43</option>
+							<option value="+44">+44</option>
+							<option value="+45">+45</option>
+							<option value="+46">+46</option>
+							<option value="+47">+47</option>
+							<option value="+48">+48</option>
+							<option value="+49">+49</option>
+							<option value="+7">+7</option>
+						</select>
+						<input type="tel" pattern="/^\d{3}&/">
+						<input type="tel" pattern="/^\d{4}&/">
+					</div>	
+				</div>
+			</fieldset>
+			<fieldset class="f1-fs fs2">
+				<legend>2. Данные доступа</legend>
+				<div>
+					<div class="fs2-label">
+						<label for="password">Пароль*</label>
+						<label>Надежность пароля</label>
+						<label for="passwordRepeat">Введите пароль еще раз*</label>
+						<label for="question">Контрольный вопрос*</label>
+						<label for="answer">Ваш ответ*</label>
+					</div>
+					<div class="fs2-input">
+						<input type="password" name="password" id="password" required pattern="/^\w{8,20}$/">
+						<p>(8-20 символов : цифры и буквы)</p>
+						<progress max="100" value="40"></progress>
+						<input type="password" name="passwordRepeat" id="passwordRepeat" required pattern="/^\w{8,20}$/">
+						<select name="question" id="question" required>
+							<option value="petsName">Имя первого питомца</option>
+							<option value="mothersSurname">Девичья фамилия матери</option>
+							<option value="firstCar">Название первого автомобиля</option>
+							<option value="nativeCity">Название родного города</option>
+							<option value="firstTrip">Первое путешествие</option>
+						</select>
+						<input type="text" name="answer" id="answer" required>
+					</div>
+				</div>
+				<div class="fs2-agree">
+					<input type="checkbox" name="agree" id="agree" checked>
+					<label for="agree">Я принимаю <a href="#">Общие условия и положения</a> и <a href="#">Политику конфедециальности</a>. Мне уже исполнилось 18 лет, и я даю свое согласие на отправку мне рекламы и информации о продуктах компанией bet-at-home.com. Я могу в любое время отказаться от своего согласия на получение рекламы и информации о продуктах в настройках своего счета</label>
+				</div>
+			</fieldset>
+			<input type="submit" value="Зарегистрироваться прямо сейчас! &#128898;">
+		</form>
+	</section>
+	<section class="f2">
+		<header>
+			<h1>Form 2</h1>
+		</header>
+		<form>
+			<fieldset class="f2-fs1 fs">
+				<legend>Адрес</legend>
+				<div class="f2-fs1-country">	
+					<label for="fs1-country">Страна</label>
+					<select name="country" id="fs1-country" required>
+						<option value="AT">Австрия</option>
+						<option value="AL">Албания</option>
+						<option value="AD">Андорpа</option>
+						<option value="BY">Белорусия</option>
+						<option value="BE">Бельгия</option>
+						<option value="BG">Болгария</option>
+						<option value="BA">Босния и Герцеговина</option>
+						<option value="VA">Ватикан</option>
+						<option value="GB">Великобритания</option>
+						<option value="HU">Венгрия</option>
+						<option value="DE">Германия</option>
+						<option value="GR">Греция</option>
+						<option value="DK">Дания</option>
+						<option value="IE">Ирландия</option>
+						<option value="IS">Исландия</option>
+						<option value="ES">Испания</option>
+						<option value="IT">Италия</option>
+						<option value="LV">Латвия</option>
+						<option value="LT">Литва</option>
+						<option value="LI">Лихтенштейн</option>
+						<option value="LU">Люксембург</option>
+						<option value="MK">Македония</option>
+						<option value="MT">Мальта</option>
+						<option value="MD">Молдавия</option>
+						<option value="MC">Монако</option>
+						<option value="NL">Нидерланды</option>
+						<option value="NO">Норвегия</option>
+						<option value="PL">Польша</option>
+						<option value="PT">Португалия</option>
+						<option value="RU">Россия</option>
+						<option value="RO">Румыния</option>
+						<option value="SM">Сан-Марино</option>
+						<option value="RS">Сербия</option>
+						<option value="SK">Словакия</option>
+						<option value="SI">Словения</option>
+						<option value="UA">Украина</option>
+						<option value="FI">Финляндия</option>
+						<option value="FR">Франция</option>
+						<option value="HR">Хорватия</option>
+						<option value="ME">Черногория</option>
+						<option value="CZ">Чехия</option>
+						<option value="CH">Швейцария</option>
+						<option value="SE">Швеция</option>
+						<option value="EE">Эстония</option>
+					</select>
+				</div>
+				<div class="f2-fs1-about">
+					<p>Нам необходимо знать ваш адрес для проверки личности клиента и обеспечения безопастности сайта</p>
+				</div>
+				<div class="f2-fs1-adress">
+					<label for="fs1-adress">Адрес</label>
+					<input type="text" id="fs1-adress" name="adress" required>
+				</div>
+				<div class="f2-fs1-city">
+					<label for="fs1-city">Город</label>
+					<input type="text" id="fs1-city" name="city" required>
+				</div>
+				<div class="f2-fs1-district">
+					<label for="fs1-district">Область</label>
+					<input type="text" id="fs1-district" name="district">необязательно
+				</div>
+				<div class="f2-fs1-postcode">
+					<label for="fs1-postcode">Почтовый индекс</label>
+					<input type="text" id="fs1-postcode" name="postcode" required>
+				</div>
+			</fieldset>
+			<fieldset class="f2-fs2 fs">
+				<legend>Данные счета Betfair</legend>
+				<div class="f2-fs2-username">
+					<label for="fs2-username">Имя пользователя</label>
+					<input type="text" id="fs2-username" name="username" patter="/^[\w]{6,40}$/" required>
+					<input type="button" value="Проверить доступность">
+				</div>
+				<p>6-40 знаков. Чувствительно к <br>регистру.</p>
+				<div class="f2-fs2-password">
+					<label for="fs2-password">Пароль</label>
+					<input type="password" id="fs2-password" name="password" pattern="/^[\w]{8,20}$/" required>
+				</div>
+				<p>8-20 знаков.</p>
+				<div class="f2-fs2-passwordRepeat">
+					<label for="fs2-passwordRepeat">Подтвержение пароля</label>
+					<input type="password" id="fs2-passwordRepeat" name="passwordRepeat" pattern="/^[\w]{8,20}$/" required>
+				</div>
+				<div class="f2-fs2-question">
+					<label for="fs2-question">Секретный вопрос</label>
+					<select name="question" id="fs2-question" required>
+						<option value="petsName">Имя первого питомца?</option>
+						<option value="mothersSurname">Девичья фамилия матери?</option>
+						<option value="firstCar">Название первого автомобиля?</option>
+						<option value="nativeCity">Название родного города?</option>
+						<option value="fathersName">Имя отца?</option>
+					</select>
+				</div>
+				<div class="f2-fs2-answer">
+					<label for="fs2-answer">Ваш ответ</label>
+					<input type="text" name="answer" id="fs2-answer">
+				</div>
+				<div class="f2-fs2-currency">
+					<label for="fs2-currency">Валюта счета Betfair</label>
+					<select name="currency" id="fs2-currency" required>
+						<option value="USD">Американский доллар (USD)</option>
+						<option value="ALB">Албанскай лек (ALB)</option>
+						<option value="BYR">Белорусский рубль (BYR)</option>
+						<option value="BGN">Болгарский лев (BGN)</option>
+						<option value="HUF">Венгерский форинт (HUF)</option>
+						<option value="DKK">Датская крона (DKK)</option>
+						<option value="EUR">Евро (EUR)</option>
+						<option value="ISK">Исландская крона (ISK)</option>
+						<option value="BAM">Конвертируемая марка (BAM)</option>
+						<option value="MKD">Македонский денар (MKD)</option>
+						<option value="MDL">Молдавский лей (MDL)</option>
+						<option value="NOK">Норвежская крона (NOK)</option>
+						<option value="PLN">Польский злотый (PLN)</option>
+						<option value="RUB">Российский рубль (RUB)</option>
+						<option value="RON">Румынский лей (RON)</option>
+						<option value="RSD">Сербский динар (RSD)</option>
+						<option value="UAH">Украинская гривна (UAH)</option>
+						<option value="GBP">Фунт стерлингов (GBP)</option>
+						<option value="HRK">Хорватская куна (HRK)</option>
+						<option value="CZN">Чешский крона (CZN)</option>
+						<option value="SEK">Шведская крона (SEK)</option>
+						<option value="CHF">Швейцарский франк (CHF)</option>
+					</select>
+					<p>Пожалуйства, выберите другую валюту, если тип валюты, которой Выпользуетесь не предствален в списке. Вы можете продолжать пользоваться Betfair. Деньги, которые Вы вносите на счет, будут конвертированы в другую валюту выбранную Вами здесь.</p>
+				</div>
+				<div class="f2-fs2-checkCode">
+					<label>Если имееться, пожалуйста, введите код промо акции или код программы "Привлекай и получай".</label>
+					<label><input type="radio" name="checkCode" value="true">Да</label>
+					<label><input type="radio" name="checkCode" value="false" checked>Нет</label>
+				</div>
+				<div class="f2-fs2-rules">
+					<ul>Нажав кнопку, Вы:
+						<li>Подтверждаете, что Вам есть 18 лет.</li>
+						<li>Соглашаюсь с <a href="#">Условиями и положениями</a> и <a href="#">Политикой конфиденциальности</a>.</li>
+						<li>Получать информацию от Betfair, и в разделе Мой счет изменять настройки рассылки электронной почты.</li>
+					</ul>
+				</div>
+				<input type="submit" value="Согласен и открыть счет">
+				<p>Прежде чем делать ставки на бирже, играть в покер или игры, Вам необходимовнести деньги на ваш игровой счет.</p>
+			</fieldset>
+		</form>
+	</section>
+</body>
+</html>
+
+
+<!--галочка на проверку валидации
+<div class="fs1-input__onvalid">
+	<img src="https://img.icons8.com/color/25/000000/checkmark.png" width="25" height="25" alt="checked">
+</div>
+-->
